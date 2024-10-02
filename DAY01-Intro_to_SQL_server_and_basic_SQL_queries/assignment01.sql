@@ -1,3 +1,7 @@
+USE AdventureWorks2019
+GO
+
+
 -- 1. Write a query that retrieves the columns ProductID, Name, Color and ListPrice from the Production.Product table, with no filter.
 SELECT ProductID, [Name] , Color, ListPrice
 FROM Production.Product
@@ -42,7 +46,7 @@ WHERE Color IS NOT NULL
 --    6. NAME: Chainring  --  COLOR: Black
 SELECT [Name] AS [NAME], Color AS COLOR
 FROM Production.Product
-WHERE [NAME] LIKE '%L Crankarm' AND COLOR IN ('Black','Silver')
+WHERE COLOR IN ('Black','Silver') AND [NAME] LIKE '%L Crankarm' OR [Name] LIKE 'Chainring%'
 
 
 -- 8. Write a query to retrieve the to the columns ProductID and Name from the Production.Product table filtered by ProductID from 400 to 500
@@ -59,7 +63,7 @@ WHERE color IN ('black','blue')
 
 
 -- 10. Write a query to get a result set on products that begins with the letter S.
-SELECT *
+SELECT ProductID, [Name]
 FROM Production.Product
 WHERE [NAME] LIKE 'S%'
 
