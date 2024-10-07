@@ -11,40 +11,48 @@
 --lifescope: is within the connection that created it. 
 --stored in the tempdb database
 
-CREATE TABLE #LocalTemp(
+CREATE TABLE #LocalTemp
+(
     Num INT
 )
 DECLARE @Variable INT = 1
 WHILE (@Variable <= 10)
-BEGIN 
-INSERT INTO #LocalTemp(Num) VALUES (@Variable)
-SET @Variable = @Variable + 1
+BEGIN
+    INSERT INTO #LocalTemp
+        (Num)
+    VALUES
+        (@Variable)
+    SET @Variable = @Variable + 1
 END
 
 SELECT *
 FROM #LocalTemp
 
 
-SELECT * 
+SELECT *
 FROM tempdb.sys.tables
 
 --global temp table: ##
 --lifescope: can be accessed by different sessions, also stored in tempdb
 
-CREATE TABLE ##GlobalTemp(
+CREATE TABLE ##GlobalTemp
+(
     Num INT
 )
 DECLARE @Variable2 INT = 1
 WHILE (@Variable2 <= 10)
-BEGIN 
-INSERT INTO ##GlobalTemp(Num) VALUES (@Variable2)
-SET @Variable2 = @Variable2 + 1
+BEGIN
+    INSERT INTO ##GlobalTemp
+        (Num)
+    VALUES
+        (@Variable2)
+    SET @Variable2 = @Variable2 + 1
 END
 
 SELECT *
 FROM ##GlobalTemp
 
-SELECT * 
+SELECT *
 FROM tempdb.sys.tables
 
 
@@ -52,21 +60,22 @@ FROM tempdb.sys.tables
 --lifescope: submit and use within a single batch
 
 DECLARE @today DATETIME
-select @today = GETDATE()
+SELECT @today = GETDATE()
 PRINT @today
 
 
 DECLARE @WeekDays TABLE (
-    DayNum INT, 
+    DayNum INT,
     DayAbb VARCHAR(20),
     WeekName VARCHAR (20)
 )
-INSERT INTO  @WeekDays VALUES
-(1, 'Mon', 'Monday'),
-(2, 'Tue', 'Tuesday'),
-(3, 'Wed', 'Wednesday'),
-(4, 'Thus', 'Thursday'),
-(5, 'Fri', 'Friday')
+INSERT INTO  @WeekDays
+VALUES
+    (1, 'Mon', 'Monday'),
+    (2, 'Tue', 'Tuesday'),
+    (3, 'Wed', 'Wednesday'),
+    (4, 'Thus', 'Thursday'),
+    (5, 'Fri', 'Friday')
 
 
 SELECT *
@@ -88,16 +97,17 @@ GO
 SELECT *
 FROM Employee
 
-INSERT INTO Employee VALUES 
-(1, 'Fred', 5000),
-(2, 'Laura', 7000),
-(3, 'Amy', 6000)
+INSERT INTO Employee
+VALUES
+    (1, 'Fred', 5000),
+    (2, 'Laura', 7000),
+    (3, 'Amy', 6000)
 
 
-CREATE VIEW vwEmp 
-AS 
-SELECT Id, EName, Salary
-FROM Employee
+CREATE VIEW vwEmp
+AS
+    SELECT Id, EName, Salary
+    FROM Employee
 
 SELECT *
 FROM vwEmp
@@ -112,7 +122,7 @@ END
 
 CREATE PROC spHello
 AS
-BEGIN 
+BEGIN
     PRINT 'Hello Anonymous Block'
 END
 
@@ -125,38 +135,42 @@ EXEC spHello
 
 --sql injection: hackers inject malicious code into our SQL queries thus, destroying our database. 
 
-SELECT Id, Name
-FROM User 
-WHERE Id = 1 UNION ALL SELECT Id, Password From User
+    SELECT Id, Name
+    FROM USER
+    WHERE Id = 1
+UNION ALL
+    SELECT Id, Password
+    FROM USER
 
 SELECT Id, Name
-FROM User 
-WHERE Id = 1 OR 1 =1 
+FROM USER
+WHERE Id = 1 OR 1 =1
 
 SELECT Id, Name
-FROM User 
-WHERE Id = 1 DROP TABLE User
+FROM USER
+WHERE Id = 1
+DROP TABLE USER
 
 
 --input: default type
 
 CREATE PROC spAddNumbers
-@a int, 
-@b int
+    @a INT,
+    @b INT
 AS
 BEGIN
     PRINT @a + @b
-End 
+END
 
 EXEC spAddNumbers 1, 2
 
 --output
 
 CREATE PROC spGetName
-@Id INT,
-@EName VARCHAR(20) OUT
+    @Id INT,
+    @EName VARCHAR(20) OUT
 AS
-BEGIN 
+BEGIN
     SELECT @EName = EName
     FROM Employee
     WHERE Id = @Id
@@ -171,7 +185,7 @@ END
 
 --sp can also return tables
 
-CREATE Proc spGetAllEmp
+CREATE PROC spGetAllEmp
 AS
 BEGIN
     SELECT *
@@ -194,11 +208,11 @@ EXEC spGetAllEmp
 --Biilt-in:
 --User defined functions:  for calculations
 
-CREATE FUNCTION GetTotalRevenue (@price money, @discount real, @quantity int)
-RETURNS money
+CREATE FUNCTION GetTotalRevenue (@price MONEY, @discount REAL, @quantity INT)
+RETURNS MONEY
 AS
 BEGIN
-    DECLARE @revenue money
+    DECLARE @revenue MONEY
     SET @revenue = @price * (1-@discount) * @quantity
     RETURN @revenue
 END
@@ -210,12 +224,12 @@ FROM [Order Details]
 
 --benefit of using udf:
 
-CREATE FUNCTION ExpensiveProduct(@threshold money)
+CREATE FUNCTION ExpensiveProduct(@threshold MONEY)
 RETURNS TABLE
 AS 
 RETURN SELECT *
-        FROM Products
-        WHERE UnitPrice > @threshold
+FROM Products
+WHERE UnitPrice > @threshold
 
 SELECT *
 FROM dbo.ExpensiveProduct(10)
@@ -233,17 +247,17 @@ FROM dbo.ExpensiveProduct(10)
 --FETCH NEXT x ROWS: Select
 
 SELECT CustomerId, ContactName, City
-FROM Customers 
+FROM Customers
 ORDER BY CustomerId
 OFFSET 10 Rows
 
 SELECT CustomerId, ContactName, City
-FROM Customers 
+FROM Customers
 ORDER BY CustomerId
 OFFSET 92 Rows
 
 SELECT CustomerId, ContactName, City
-FROM Customers 
+FROM Customers
 ORDER BY CustomerId
 OFFSET 10 Rows
 FETCH NEXT 10 ROWS ONLY
@@ -253,21 +267,22 @@ FETCH NEXT 10 ROWS ONLY
 --Top: fetch top several records, use it with or without ORDER BY 
 --offset and fetch: only use it with ORDER BY
 
-DECLARE @PageNum INT 
-DECLARE @RowsOfPage INT 
+DECLARE @PageNum INT
+DECLARE @RowsOfPage INT
 DECLARE @MaxTablePage FLOAT
 SET @PageNum =1
 SET @RowsOfPage = 10
-SELECT @MaxTablePage = Count(*) FROM Customers
+SELECT @MaxTablePage = Count(*)
+FROM Customers
 SET @MaxTablePage = CEILING(@MaxTablePage/@RowsOfPage)
 WHILE @PageNum <= @MaxTablePage
 BEGIN
-SELECT CustomerId, ContactName, City
-FROM Customers 
-ORDER BY CustomerId
+    SELECT CustomerId, ContactName, City
+    FROM Customers
+    ORDER BY CustomerId
 OFFSET (@PageNum -1) * @RowsOfPage ROWS
 FETCH NEXT @RowsOfPage ROWS ONLY
-SET @PageNum = @PageNum + 1
+    SET @PageNum = @PageNum + 1
 END
 
 --Normalization
@@ -275,9 +290,9 @@ END
 --one to many relationship: 
 --many to many relationship: create a conjuntion table
 --student table and class table : enrollment table 
- 
 
- -- student table ---- enrollment table --- class table 
+
+-- student table ---- enrollment table --- class table 
 
 
 --Constraints
@@ -287,19 +302,26 @@ GO
 
 DROP TABLE Employee
 
-CREATE TABLE Employee(
-    Id INT PRIMARY KEY , 
+CREATE TABLE Employee
+(
+    Id INT PRIMARY KEY ,
     EName VARCHAR(20) NOT NULL,
     Age INT
 )
 
-INSERT INTO Employee VALUES (1, 'Sam', 45)
-INSERT INTO Employee VALUES (null, 'Fiona', 23)
+INSERT INTO Employee
+VALUES
+    (1, 'Sam', 45)
+INSERT INTO Employee
+VALUES
+    (NULL, 'Fiona', 23)
 
 SELECT *
 FROM Employee
 
-INSERT INTO Employee VALUES (null, null, null)
+INSERT INTO Employee
+VALUES
+    (NULL, NULL, NULL)
 
 
 --primary key vs. unique constraint
@@ -311,7 +333,15 @@ INSERT INTO Employee VALUES (null, null, null)
 
 DELETE  Employee
 
-INSERT INTO Employee VALUES (4, 'Sam', 45)
-INSERT INTO Employee VALUES (2, 'Fiona', 23)
-INSERT INTO Employee VALUES (3, 'Fred', 45)
-INSERT INTO Employee VALUES (1, 'Stella', 23)
+INSERT INTO Employee
+VALUES
+    (4, 'Sam', 45)
+INSERT INTO Employee
+VALUES
+    (2, 'Fiona', 23)
+INSERT INTO Employee
+VALUES
+    (3, 'Fred', 45)
+INSERT INTO Employee
+VALUES
+    (1, 'Stella', 23)

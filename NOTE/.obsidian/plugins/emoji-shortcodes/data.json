@@ -1,0 +1,12 @@
+{
+  "immediateReplace": true,
+  "suggester": true,
+  "historyPriority": true,
+  "historyLimit": 100,
+  "history": [
+    ":warning:",
+    ":pencil:",
+    ":2nd_place_medal:",
+    ":star:"
+  ]
+}

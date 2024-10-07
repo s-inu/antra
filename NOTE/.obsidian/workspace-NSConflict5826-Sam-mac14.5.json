@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "e4fab8523234e990",
+    "type": "split",
+    "children": [
+      {
+        "id": "799ca98333bb43d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "681b9eeb3d99bfa2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOLN503-NonOfficial.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3df4b68eecab87c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOLN295-NonOfficial.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d64ab9c6e638173c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE17_T07-HashTable&String@Frank_Fri1202.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f156ef1461e1bfe",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc931db4912c04a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2f6356a52fe0f6e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4aa79dc28e7fa736",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b16d4b97319f9747",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 383.5
+  },
+  "right": {
+    "id": "486776c96653399b",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d9932136511ef18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ebd74c047bc9374",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SOLN295-NonOfficial.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "64988e30ac1738ff",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SOLN295-NonOfficial.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cb13a273cb40b034",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "05e8c954e02a03c2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SOLN295-NonOfficial.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "media-extended:Open media": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "markdown-importer:Open format converter": false,
+      "notion-like-tables:Create loom": false
+    }
+  },
+  "active": "3df4b68eecab87c4",
+  "lastOpenFiles": [
+    "SOLN503-NonOfficial.md",
+    "SOLN295-NonOfficial.md",
+    "Unlinked Stack.md",
+    "Untitled.canvas",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "CSE22_T09-String@Anna_Fri1209.md",
+    "CSE17_T07-HashTable&String@Frank_Fri1202.md",
+    "CSE14_T06-Heap&GraphSearchAlgo@Anna_Sun1127.md",
+    "CSE20_T08-DFS@Nate_Tue1206.md",
+    "Solutions/SOLN085.md",
+    "Problems/08-HashTable and String I-PROB085_Determine If One String Is Another's Substring.md",
+    "Problems/PROB025_K Smallest In Unsorted Array.md",
+    "CSE15_Pt09-Heap@Frank_Tue1129.md",
+    "Dijkstra's Algo.png",
+    "Problems/05-Graph Search I BFS-PROB296_Right View Of Binary Tree.md",
+    "CSE13_Pt08-BinaryTree@Frank_Sat1127.md",
+    "Problems/15-Warm-up Exercises for Cross-training I-PROB057_Get Keys In Binary Tree Layer By Layer.md",
+    "CSE05_Pt03-BS&RecursionReview@Daniel_Sat1112.md",
+    "CSE06_T03-LinkedList@Nate_Sun1113.md",
+    "CSE12_Pt07-Graph@Derron_Tue1122.md",
+    "Problems/05-Graph Search I BFS-PROB503_Walls and gates.md",
+    "Problems/05-Graph Search I BFS-PROB295_Cousins In Binary Tree.md",
+    "SOLN295.nssyncsc",
+    "SOLN503.nssyncsc",
+    "CSE11_T05-BinaryTree&BST@Sherry_Sun1120.md",
+    "Excalidraw/Drawing 2024-04-25 12.28.33.excalidraw.md",
+    "CSE09_T04-Queue&Stack@Anna_Fri1118.md",
+    "CSE00_A05-DFS@Nate_Sat1203.md",
+    "Untitled 3.nssyncsc",
+    "Untitled",
+    "Untitled 1.canvas",
+    "Problems/32-Cross-training V_Longest Ascending Subsequence_PROB001",
+    "Problems/31-Cross-training DIY_Total Occurrence_PROB024",
+    "Problems/31-Cross-training DIY_Shift Position_PROB023",
+    "Problems/31-Cross-training DIY_Selection Sort Linked List_PROB028",
+    "Problems/31-Cross-training DIY_Search In Shifted Sorted Array I_PROB021",
+    "Problems/31-Cross-training DIY_Search In Shifted Sorted Array II_PROB022",
+    "Map_Collection_CheatSheet.png"
+  ]
+}

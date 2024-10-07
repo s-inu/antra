@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "attachmentFolderPath": "./Images",
+  "vimMode": true,
+  "useTab": false,
+  "tabSize": 2,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current"
+}
