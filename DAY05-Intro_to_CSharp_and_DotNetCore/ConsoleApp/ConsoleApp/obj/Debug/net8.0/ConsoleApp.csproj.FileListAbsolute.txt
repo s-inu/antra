@@ -1,0 +1,14 @@
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.deps.json
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.runtimeconfig.json
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.dll
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.pdb
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.AssemblyInfoInputs.cache
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.AssemblyInfo.cs
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.dll
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/refint/ConsoleApp.dll
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.pdb
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.genruntimeconfig.cache
+/Users/anjila/Desktop/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ref/ConsoleApp.dll

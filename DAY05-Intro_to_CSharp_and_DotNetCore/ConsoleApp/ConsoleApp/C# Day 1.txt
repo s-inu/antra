@@ -1,0 +1,91 @@
+
+Category of Types:
+1. Built in types
+    signed types: +/-
+    unsigned types: 
+2. User Defined Types
+
+Another Category:
+
+1. Value Type
+2. Reference type
+
+Value type vs reference type
+
+1. Value type will directly hold the value while reference type will hold the memory address or reference for the value. 
+2. Value type is stored in the stack memory but reference type is stored in the heap memory. 
+3. Value type will not be collected by garbage collector but reference type will be collected by garbage collector.
+4. The value type is created by struct or enum while reference type is created by class, interface, delegate or array.
+5. Value type can not accept null values whereas reference types can accept null values.   
+
+CLR: Common Language Runtime 
+
+Heap memory: Generation 0, 1 & 2 
+
+Heap memory: 1. Managed Heap: organized by garbage collector
+             2. Unmanaged Heap: Dispose() method of IDisposable interface. 
+                     
+String is immutable.    
+StringBuilder is a class that represents mutable string. 
+
+Enum: Enumeration; named value constant; value type; immutable, readonly variables. 
+
+Method Syntax:
+
+[Access Modifiers] ReturnType MethodName([Formal Parameters])
+{
+
+}
+
+Access Modifiers:
+
+Public:Members can be accessed anywhere. 
+Private: Members can be accessed within a current class only. 
+Protected: Members can be accessed in a current class and children classes.
+Internal: Members can be accessed in the current assembly. 
+
+A project when complied becomes an assembly which later becomes an exe or dll file. 
+
+Boxing and Unboxing:
+
+Boxing is the operation to convert value type to the reference type/ object type.
+Unboxing is the operation to convert reference type/object type to value type. 
+
+Modes of Parameters Passing:
+
+1. Pass by value: copy of the actual parameter is created and passed to the formal parameter; default one 
+2. Pass by reference: the reference of the actual parameter is passed to the formal parameter so that any change in the formal parameter
+will also reflect in the actual parameter. 
+3. Optional Parameters: they allow you to define default value for method parameters. the optional params must appear at the end of the 
+parameter list. 
+4. Out mode : when you want to return more than one value from a single method, use out mode
+5. Params: parameters of the same type but with the variable length. 
+
+
+
+
+ vs out: 
+1. For ref, we have to initalize the value first but for out mode, we do not necessarily need to initalize the value first. 
+2. Both are pass by reference since both of them will change the value of the actual variable. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+             
+             
+             
