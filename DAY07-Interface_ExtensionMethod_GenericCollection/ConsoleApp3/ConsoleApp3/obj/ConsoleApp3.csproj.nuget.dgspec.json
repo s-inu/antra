@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sam\\Desktop\\Antra\\DAY06-OOP\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj": {}
+    "/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/ConsoleApp3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sam\\Desktop\\Antra\\DAY06-OOP\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj": {
+    "/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/ConsoleApp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sam\\Desktop\\Antra\\DAY06-OOP\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
-        "projectName": "ConsoleApp2",
-        "projectPath": "C:\\Users\\sam\\Desktop\\Antra\\DAY06-OOP\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
-        "packagesPath": "C:\\Users\\sam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sam\\Desktop\\Antra\\DAY06-OOP\\ConsoleApp2\\ConsoleApp2\\obj\\",
+        "projectUniqueName": "/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/ConsoleApp3.csproj",
+        "projectName": "ConsoleApp3",
+        "projectPath": "/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/ConsoleApp3.csproj",
+        "packagesPath": "/Users/anjila/.nuget/packages/",
+        "outputPath": "/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/anjila/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

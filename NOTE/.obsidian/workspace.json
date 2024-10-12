@@ -69,7 +69,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day04.md",
+                "file": "03-IntermediateSQL_Thu100324.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,9 +86,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4a5cc5f75e642525",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06-OOP_Tue100824.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -155,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "06-Intro2CSharpAndDotNetCore_Mon100724.md",
+                "file": "06-OOP_Tue100824.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "06-Intro2CSharpAndDotNetCore_Mon100724.md",
+                "file": "06-OOP_Tue100824.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-Intro2CSharpAndDotNetCore_Mon100724.md"
+                "file": "06-OOP_Tue100824.md"
               }
             }
           }
@@ -220,10 +232,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3691c08c0c1d82f7",
+  "active": "4a5cc5f75e642525",
   "lastOpenFiles": [
-    "Day04.md",
     "06-Intro2CSharpAndDotNetCore_Mon100724.md",
+    "03-IntermediateSQL_Thu100324.md",
+    "06-OOP_Tue100824.md",
     "Untitled",
     "CSE08_Pt05-LinkedList&Interface@Sherry_Thu1117.md",
     "CSE20_T08-DFS@Nate_Tue1206.md",
@@ -248,7 +261,6 @@
     "Solutions/SOLN143-Nate's.md",
     "Problems/31-Cross-training DIY-PROB143_Minimum Cuts For Palindromes.md",
     "Solutions/SOLN225-NonOfficial.md",
-    "Solutions/SOLN138-Nate'sModified.md",
     "Images/LargestSqaureOf1s.png",
     "Images/BinaryTree Flip Upside Down.png",
     "Untitled 1.nssyncsc",

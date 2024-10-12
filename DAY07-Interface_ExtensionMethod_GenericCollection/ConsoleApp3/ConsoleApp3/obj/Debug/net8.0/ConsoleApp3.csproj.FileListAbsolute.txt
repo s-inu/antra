@@ -1,0 +1,14 @@
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.deps.json
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.runtimeconfig.json
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.dll
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/bin/Debug/net8.0/ConsoleApp3.pdb
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.AssemblyInfoInputs.cache
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.AssemblyInfo.cs
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.csproj.CoreCompileInputs.cache
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.dll
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/refint/ConsoleApp3.dll
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.pdb
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ConsoleApp3.genruntimeconfig.cache
+/Users/anjila/Desktop/SepVA2024/ConsoleApp3/ConsoleApp3/obj/Debug/net8.0/ref/ConsoleApp3.dll
