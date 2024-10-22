@@ -1,0 +1,49 @@
+LINQ: Language Integrated Query and it's a SQL like syntax to help us talk to different data sources.
+
+in-memory data sources: data temporarily stored in our application; list, array
+out-of memory data sources: database
+
+Data Providers with LINQ:
+
+1. LINQ to objects: in-memory data sources like list or array, etc; the return type is going to be IEnumerable. 
+2. LINQ to Datasets: work with ADO.Net 
+3. LINQ to SQL: talk to SQL Server Database. - the return type is IQueryable
+4. LINQ to Entities: talk to other sql db, Entity Framework as ORM - the return type is IQueryable. 
+
+LINQ is also a bunch of extension methods that provide multiple Query expressions on IEnumerable<T> interface. 
+
+
+First: Return the first record when there is one or more matching value found and if no matching record got found, it will 
+throw the exception
+FirstOrDefault: Returns the first record when there is one or more matching value found and if no matching record got found, then
+it will assign the default null value. 
+
+Single: Return the matched single record but if we can not find any matching record, it will throw an exception. If we have more than one
+matching record, it will also throw an exception. 
+SingleOrDefault: Return the matched single record but if no matching record is found, it wil assign the default value. And if more than one
+matching record is found, it will throw an exception. 
+
+Quantifier Operator:
+
+Any(): checks if any elements satisfy the specified condition, if yes returns true
+All(): checks if all the elements satisfy the specified condition, if yes returns true. 
+
+Inner Join: 
+
+var result = from c in Customers join o in Orders on c.CustomerID 
+equals o.CustomerID
+select new {c.CustomerID, c.ContactName, o.OrderDate}; 
+
+
+Left Join:
+var result = from c in Customers join o in Orders on c.CustomerID 
+equals o.CustomerID 
+into customerOrders 
+//store it into a temporary collection
+from co in customerOrders.DefaultIfEmpty()
+select new {c.CustomerID, c.ContactName, 
+co.OrderDate};
+
+Deferred Execution: if Linq returns collection
+Immediate Execution: If linq returns single value using aggregators like count, max, min, sum
+Use ToList(), ToArray() methods to convert from IQueryable to IEnumerable, in that case Linq will have immediate execution. 
